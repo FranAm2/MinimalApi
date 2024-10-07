@@ -10,6 +10,11 @@ namespace MinimalApi.Infraestrutura.Db
         {
             _configuracaoAppSettins = configuration;
         }
+
+        public DbContexto()
+        {
+        }
+
         public DbSet<Administrador> Administradores { get; set; } = default!;
 
         public DbSet<Veiculo> Veiculos { get; set; } = default!;
